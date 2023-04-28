@@ -1,17 +1,18 @@
 {
-  "name": "@bricked/ts-template",
+  "name": "@bricked/tsup-config",
   "private": false,
-  "description": "A template for typescript projects.",
+  "description": "Shared tsup configuration for my projects.",
   "keywords": [
-    "ts-template"
+    "tsup",
+    "config"
   ],
-  "homepage": "https://github.com/brycked/ts-template#readme",
+  "homepage": "https://github.com/brycked/tsup-config#readme",
   "bugs": {
-    "url": "https://github.com/brycked/ts-template/issues"
+    "url": "https://github.com/brycked/tsup-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brycked/ts-template.git"
+    "url": "git+https://github.com/brycked/tsup-config.git"
   },
   "license": "MIT",
   "author": "Bricked",
@@ -41,7 +42,6 @@
     "extends": "@bricked"
   },
   "release": {
-    "dryRun": true,
     "extends": "@bricked/semantic-release-config"
   },
   "devDependencies": {

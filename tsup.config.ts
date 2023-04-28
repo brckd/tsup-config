@@ -1,15 +1,8 @@
 import { defineConfig } from "tsup";
+import config from "./src";
 
 export default defineConfig({
-  tsconfig: "src/tsconfig.json",
+  ...config,
   entry: ["src/**/*.ts"],
-  format: ["cjs"],
-  target: "es2020",
-  clean: true,
-  bundle: true,
-  skipNodeModulesBundle: true,
-  treeshake: true,
-  minify: false,
-  sourcemap: true,
-  dts: true,
+  tsconfig: "src/tsconfig.json",
 });

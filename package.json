@@ -16,6 +16,10 @@
   },
   "license": "MIT",
   "author": "Bricked",
+  "exports": {
+    ".": "./dist/index.js",
+    "./minify": "./dist/minify.js"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsup",

@@ -18,7 +18,35 @@ pnpm add --dev @bricked/tsup-config
 
 ## Usage
 
-`tsup-config` can be used as shared tsup configuration for my projects.
+## Base Config
+
+Use the [`base`](./src/index.ts) config in your `tsup.config.ts` to compile for npm:
+
+```ts
+import { defineConfig } from "tsup";
+import config from "@bricked/tsup-config";
+
+export default defineConfig({
+  ...config,
+  entry: ["src/**/*.ts"],
+  tsconfig: "src/tsconfig.json",
+});
+```
+
+## Minifying Config
+
+Use the [`minify`](./src/minify.ts) config to compile for targets without npm:
+
+```ts
+import { defineConfig } from "tsup";
+import config from "@bricked/tsup-config/minify";
+
+export default defineConfig({
+  ...config,
+  entry: ["src/**/*.ts"],
+  tsconfig: "src/tsconfig.json",
+});
+```
 
 ## Building
 
